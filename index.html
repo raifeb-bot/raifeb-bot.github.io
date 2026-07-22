@@ -8,12 +8,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&family=Bitter:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%233E2A1A'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23F4ECDD' font-family='serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231E2A55'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23F4ECDD' font-family='serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
 <style>
   :root{
-    --paper:#F4ECDD; --cream:#FBF6EA; --leather:#3E2A1A; --saddle:#6B4423;
-    --rust:#B4552D; --turquoise:#2A8C82; --gold:#C8922A; --ink:#2B1D10;
-    --line:#D9CBB0;
+    --paper:#F5F8FC; --cream:#FFFFFF; --leather:#1E2A55; --saddle:#43537F;
+    --rust:#17191E; --turquoise:#D9E7F6; --gold:#B08A3C; --ink:#14161C;
+    --line:#D7E1EE;
   }
   *{box-sizing:border-box; margin:0; padding:0}
   html{scroll-behavior:smooth}
@@ -54,7 +54,7 @@
   .hero{
     text-align:center; padding:72px 20px 60px;
     background:
-      radial-gradient(1200px 500px at 50% -100px, rgba(200,146,42,.16), transparent),
+      radial-gradient(1200px 500px at 50% -100px, rgba(30,42,85,.08), transparent),
       var(--paper);
     border-bottom:4px double var(--saddle);
     position:relative;
@@ -67,7 +67,7 @@
   .hero h1{margin:6px 0 2px}
   .hero h1 .big{
     font-family:'Rye',serif; font-size:clamp(64px, 14vw, 150px); color:var(--leather);
-    display:block; line-height:1; text-shadow:3px 3px 0 rgba(200,146,42,.35);
+    display:block; line-height:1; text-shadow:3px 3px 0 rgba(30,42,85,.22);
   }
   .hero h1 .small{
     font-family:'Bitter',serif; font-weight:600; font-style:italic;
@@ -91,13 +91,13 @@
   .poster{
     background:var(--cream); border:3px solid var(--leather); border-radius:8px;
     padding:26px 22px; position:relative;
-    box-shadow:6px 6px 0 rgba(62,42,26,.18);
+    box-shadow:6px 6px 0 rgba(20,25,50,.16);
   }
   .poster::before{
     content:""; position:absolute; inset:6px; border:1px solid var(--gold); border-radius:5px; pointer-events:none;
   }
   .poster .badge{
-    width:52px; height:52px; border-radius:50%; background:var(--turquoise); color:var(--cream);
+    width:52px; height:52px; border-radius:50%; background:var(--turquoise); color:var(--leather);
     display:flex; align-items:center; justify-content:center; font-size:24px; margin:0 auto 14px;
     border:3px solid var(--leather);
   }
@@ -123,12 +123,12 @@
   .gallery{display:grid; grid-template-columns:repeat(auto-fill, minmax(240px,1fr)); gap:18px}
   .frame{
     background:var(--cream); border:3px solid var(--saddle); border-radius:6px; padding:10px;
-    box-shadow:4px 4px 0 rgba(62,42,26,.15);
+    box-shadow:4px 4px 0 rgba(20,25,50,.13);
   }
   .frame .inner{
     aspect-ratio:4/3; border:1px dashed var(--saddle); border-radius:4px;
     display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
-    color:var(--saddle); background:repeating-linear-gradient(45deg, rgba(107,68,35,.05) 0 12px, transparent 12px 24px);
+    color:var(--saddle); background:repeating-linear-gradient(45deg, rgba(30,42,85,.05) 0 12px, transparent 12px 24px);
     text-align:center; padding:12px; overflow:hidden;
   }
   .frame .inner .ph-icon{font-size:34px}
@@ -147,7 +147,7 @@
   .book .formcard{
     max-width:640px; margin:0 auto; background:var(--cream);
     border:3px solid var(--leather); border-radius:10px; padding:30px 26px;
-    box-shadow:8px 8px 0 rgba(62,42,26,.18);
+    box-shadow:8px 8px 0 rgba(20,25,50,.16);
   }
   .fgrid{display:grid; grid-template-columns:1fr 1fr; gap:16px}
   @media (max-width:560px){ .fgrid{grid-template-columns:1fr} }
@@ -158,13 +158,13 @@
     font:inherit; font-size:16px; padding:11px 12px; border:2px solid var(--saddle);
     border-radius:6px; background:var(--paper); color:var(--ink); width:100%;
   }
-  .field input:focus, .field select:focus, .field textarea:focus{outline:3px solid var(--turquoise); outline-offset:1px}
+  .field input:focus, .field select:focus, .field textarea:focus{outline:3px solid var(--gold); outline-offset:1px}
   .book .send{margin-top:22px; text-align:center}
   .book .send .btn{width:100%; font-size:17px; padding:15px}
   .book .fineprint{text-align:center; font-size:14px; color:var(--saddle); margin-top:14px}
 
   /* thanks banner (shows when redirected to #thanks) */
-  #thanks{display:none; max-width:640px; margin:0 auto 26px; background:var(--turquoise); color:var(--cream);
+  #thanks{display:none; max-width:640px; margin:0 auto 26px; background:var(--leather); color:var(--cream);
     border-radius:8px; padding:16px 20px; text-align:center; font-weight:600; border:2px solid var(--leather)}
   #thanks:target{display:block}
 
@@ -196,7 +196,7 @@
 
   <!-- HERO -->
   <div class="hero">
-    <div class="eyebrow">Locally Owned &amp; Operated</div>
+    <div class="eyebrow">Est. 2023 · Locally Owned &amp; Operated</div>
     <div class="stars">✦ ✦ ✦</div>
     <h1>
       <span class="big">GRIT</span>
